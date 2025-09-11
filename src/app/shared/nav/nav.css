@@ -1,0 +1,27 @@
+.container-one-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #171717;
+    height: 14vh;
+    
+    .nav-links{
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+            a{
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+            }
+    }
+    
+
+    .image-logo{
+        img{
+            height: auto;
+            width: 150px;
+        }
+    }
+}

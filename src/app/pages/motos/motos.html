@@ -1,0 +1,18 @@
+<app-nav></app-nav>
+<div class="busqueda">
+  <app-search-bar></app-search-bar>
+  <app-filtro-categoria></app-filtro-categoria>
+</div>
+
+<div class="catalog-container">
+  <h2 class="catalog-title">Catálogo de Motos</h2>
+
+  <div class="card" *ngFor="let moto of motos">
+    <img [src]="moto.img" [alt]="moto.nombre">
+    <h3>{{ moto.nombre }}</h3>
+    <p>{{ moto.descripcion }}</p>
+    <button>Ver más</button>
+  </div>
+</div>
+<app-paginacion></app-paginacion>
+<app-footer></app-footer>

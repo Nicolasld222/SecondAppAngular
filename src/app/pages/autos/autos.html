@@ -1,0 +1,17 @@
+<app-nav></app-nav>
+<app-search-bar></app-search-bar>
+<app-filtro-categoria></app-filtro-categoria>
+
+<div class="catalog-container">
+  <h2 class="catalog-title">Catálogo de Autos de Alta Gama</h2>
+
+  <div class="card" *ngFor="let auto of autos">
+    <img [src]="auto.img" [alt]="auto.nombre">
+    <h3>{{ auto.nombre }}</h3>
+    <p>{{ auto.descripcion }}</p>
+    <button>Ver más</button>
+  </div>
+</div>
+
+<app-paginacion></app-paginacion>
+<app-footer></app-footer>

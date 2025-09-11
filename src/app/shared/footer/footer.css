@@ -1,0 +1,21 @@
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #171717;
+    color: white;
+    justify-content: space-evenly;
+    height: 20vh;
+    align-items: center;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        h3{
+            font-size: 30px;
+        }
+        p{
+            font-size: 17px;
+        }
+        
+    }
+}

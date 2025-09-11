@@ -1,0 +1,33 @@
+.filtro-container {
+  text-align: center;
+  padding:40px 0px;
+  background-color: black;
+}
+
+.filtro-opciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.filtro-btn {
+  background: blue;
+  border: 1px solid blue;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.filtro-btn:hover {
+  background: white;
+  color: black;
+  border-color: white;
+}
+
+.filtro-btn:active {
+  transform: scale(0.95);
+}

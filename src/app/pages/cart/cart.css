@@ -1,0 +1,116 @@
+.cart-container {
+    padding: 20px;
+    background: url(https://4kwallpapers.com/images/walls/thumbs_3t/17459.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 660px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    align-items: center;
+}
+
+.cart-item img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.item-info p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: white;
+}
+
+.item-info span {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.remove-btn {
+  background: red;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: #e63939;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.cart-summary h2 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+.checkout-btn {
+  background: #007bff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.checkout-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-item img {
+    margin-bottom: 10px;
+  }
+
+  .item-info {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,43 @@
+.contact-container {
+    display: flex;
+    padding: 30px 0px;
+    text-align: center;
+    background-color: black;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-container button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-container button:hover {
+  background: #0056b3;
+}
