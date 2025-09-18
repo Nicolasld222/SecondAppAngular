@@ -1,35 +1,22 @@
 <app-nav></app-nav>
-<div class="cart-container">
-  <h1>Tu Carrito</h1>
+<div class="image-fondo">
+  <div *ngFor="let item of productos" 
+      class="cart-item"
+      [ngClass]="{ 'producto-caro': item.precio > 100000, 'producto-barato': item.precio <= 100000 }">
 
-  <div class="cart-items">
-    <!-- Producto 1 -->
-    <div class="cart-item">
-      <img src="https://i.pinimg.com/1200x/3d/5b/42/3d5b421063e7365d4cc86c08d45ee9bf.jpg" alt="Producto">
-      <div class="item-info">
-        <h3>Ferrari F8</h3>
-        <p>Precio: $200,000</p>
-        <span>Cantidad: 1</span>
-      </div>
-      <button class="remove-btn">Eliminar</button>
+    <img [src]="item.imagen" [alt]="item.nombre" class="product-img">
+    
+    <div class="item-info">
+      <h3>{{ item.nombre }}</h3>
+      <p>Precio: ${{ item.precio }}</p>
+      <span>Cantidad: 1</span>
     </div>
 
-    <!-- Producto 2 -->
-    <div class="cart-item">
-      <img src="https://i.pinimg.com/1200x/29/da/e6/29dae6f80166b95c3e65e4ad6e0060a8.jpg" alt="Producto">
-      <div class="item-info">
-        <h3>Moto Ducati V4</h3>
-        <p>Precio: $25,000</p>
-        <span>Cantidad: 2</span>
-      </div>
-      <button class="remove-btn">Eliminar</button>
-    </div>
+    <button class="remove-btn">Eliminar</button>
   </div>
-
   <div class="cart-summary">
     <h2>Total: $250,000</h2>
     <button class="checkout-btn">Finalizar Compra</button>
   </div>
 </div>
-
 <app-footer></app-footer>

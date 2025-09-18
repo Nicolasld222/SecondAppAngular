@@ -1,15 +1,8 @@
-.image-back{
-    width: 100%;
-    height: 670px; 
-    background-image: url('../../../../public/images/porsche-911.avif') ;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    background-position: center;
-}
+
 .hero-section {
   width: 100%;
   height: 600px;
-  background-image: url('../../../../public/images/Lexus.jpeg'); /* cambia por tu imagen */
+  background-image: url(https://res.cloudinary.com/dwkq16pdu/image/upload/v1757954274/Lexus_kr1jak.jpg); /* cambia por tu imagen */
   background-size: cover;      
   background-position: center; 
   background-repeat: no-repeat; 

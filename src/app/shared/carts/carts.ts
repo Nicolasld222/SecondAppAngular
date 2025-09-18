@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './carts.css'
 })
 export class Carts {
-    ferrari: string = 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-    s1000rr: string = 'https://images.unsplash.com/photo-1693762462218-a1b464da5a6a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-    x6: string = 'https://i.pinimg.com/1200x/9f/0e/1f/9f0e1f6ba15e318234add44ab29da759.jpg';
-    panigalev4: string = 'https://i.pinimg.com/1200x/29/da/e6/29dae6f80166b95c3e65e4ad6e0060a8.jpg';
+    ferrari: string = 'https://res.cloudinary.com/dwkq16pdu/image/upload/v1758157897/photo-1583121274602-3e2820c69888_jdbli8.jpg';
+    s1000rr: string = 'https://res.cloudinary.com/dwkq16pdu/image/upload/v1758157921/photo-1693762462218-a1b464da5a6a_dhz2a9.jpg';
+    x6: string = 'https://res.cloudinary.com/dwkq16pdu/image/upload/v1758157940/9f0e1f6ba15e318234add44ab29da759_u08g77.jpg';
+    panigalev4: string = 'https://res.cloudinary.com/dwkq16pdu/image/upload/v1758157962/29dae6f80166b95c3e65e4ad6e0060a8_toior3.jpg';
   }

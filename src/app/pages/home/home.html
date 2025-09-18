@@ -9,10 +9,14 @@
 <div class="hero-section">
   <div class="overlay">
     <h1>Catálogo</h1>
+  @if (showButtons) {
     <div class="hero-buttons">
       <a routerLink="/motos" class="btn">Motos</a>
-      <a routerLink="/autos" class="btn">Carros</a>
+      <a routerLink="/autos" class="btn">Autos</a>
     </div>
+  } @else {
+    <p>El catálogo estará disponible próximamente</p>
+  }
   </div>
 </div>
 <app-boletin></app-boletin>

@@ -7,13 +7,16 @@ import { Banner } from '../../shared/banner/banner';
 import { Testimonial } from '../../shared/testimonial/testimonial';
 import { Contacto } from '../../shared/contacto/contacto';
 import { Boletin } from '../../shared/boletin/boletin';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [Nav, Footer, SearchBar, Carts, Banner, Testimonial, Contacto, Boletin],
+  standalone: true,
+  imports: [Nav, Footer, SearchBar, Carts, Banner, Testimonial, Contacto, Boletin, RouterModule],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrls: ['./home.css']
 })
 export class Home {
-  
+ showButtons = true;           
+  categoriaDestacada = 'autos';
 }

@@ -1,10 +1,21 @@
 <div class="filtro-container">
   <h2>Filtrar por Categoría</h2>
   <div class="filtro-opciones">
-    <button class="filtro-btn">Todos</button>
-    <button class="filtro-btn">Autos</button>
-    <button class="filtro-btn">Motos</button>
-    <button class="filtro-btn">Deportivos</button>
-    <button class="filtro-btn">Camionetas</button>
+    <button class="filtro-btn" (click)="cambiarCategoria('todos')">Todos</button>
+    <button class="filtro-btn" (click)="cambiarCategoria('autos')">Autos</button>
+    <button class="filtro-btn" (click)="cambiarCategoria('motos')">Motos</button>
+    <button class="filtro-btn" (click)="cambiarCategoria('deportivos')">Deportivos</button>
+    <button class="filtro-btn" (click)="cambiarCategoria('camionetas')">Camionetas</button>
+  </div>
+
+  <div class="resultado-filtro">
+    @switch(categoria) {
+      @case('todos') { <p> Mostrando todos los vehículos</p> }
+      @case('autos') { <p> Mostrando Autos</p> }
+      @case('motos') { <p> Mostrando Motos</p> }
+      @case('deportivos') { <p> Mostrando Deportivos</p> }
+      @case('camionetas') { <p> Mostrando Camionetas</p> }
+      @default { <p> Selecciona una categoría</p> }
+    }
   </div>
 </div>

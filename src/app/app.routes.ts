@@ -13,5 +13,5 @@ export const routes: Routes = [
     { path: 'motos', component: Motos },
     { path: 'nosotros', component: Nosotros },
     { path: 'cart', component: Cart },
-    { path: '**', redirectTo: '' } // cualquier ruta inválida redirige a home
+    { path: '**', redirectTo: '' } 
 ];

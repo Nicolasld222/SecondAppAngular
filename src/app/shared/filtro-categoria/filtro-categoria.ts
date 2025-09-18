@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './filtro-categoria.css'
 })
 export class FiltroCategoria {
+  categoria = 'todos'; 
 
+  cambiarCategoria(cat: string) {
+    this.categoria = cat;
+  }
 }
